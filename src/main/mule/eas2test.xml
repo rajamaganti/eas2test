@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd"></mule>
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="53b05b3e-698c-4c58-8b85-bfbae4a327fe" >
+		<http:listener-connection host="0.0.0.0" port="2424" />
+	</http:listener-config>
+	<flow name="eas2testFlow" doc:id="9062b324-acc6-4fc5-b250-33d22f563bcb" >
+		<http:listener doc:name="Listener" doc:id="23065b7e-860c-4659-a476-713db4717b1b" config-ref="HTTP_Listener_config" path="/tesrt" allowedMethods="GET"/>
+		<set-payload value="test by raja" doc:name="Set Payload" doc:id="1ecc9768-91c3-49b9-85be-46d3b6da3a95" />
+	</flow>
+</mule>
