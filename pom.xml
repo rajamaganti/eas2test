@@ -31,7 +31,7 @@
       					<muleVersion>${app.runtime}</muleVersion>
       					<username>magantiraja</username>
       					<password>Harika1225</password>
-      					<applicationName>eas2-cicd</applicationName>
+      					<applicationName>eas2test</applicationName>
       					<environment>Sandbox</environment>
       					<workerType>Micro</workerType>
 	  				<workers>1</workers>    
