@@ -23,9 +23,19 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-							<extensions>true</extensions>
+				<version>3.1.6</version>
+				<extensions>true</extensions>
 				<configuration>
-					
+					<cloudHubDeployment>
+     					<uri>https://anypoint.mulesoft.com</uri>
+      					<muleVersion>${app.runtime}</muleVersion>
+      					<username>magantiraja</username>
+      					<password>Harika1225</password>
+      					<applicationName>eas2-cicd</applicationName>
+      					<environment>Sandbox</environment>
+      					<workerType>Micro</workerType>
+	  				<workers>1</workers>    
+   					</cloudHubDeployment>
  				</configuration>
 			</plugin>
 		</plugins>
