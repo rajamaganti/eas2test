@@ -23,14 +23,14 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				
-				<extensions>true</extensions>
+							<extensions>true</extensions>
 				<configuration>
 					
  				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
 	
 	<dependencies>
         <dependency>
