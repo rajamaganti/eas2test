@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="eas2testFlow" doc:id="9062b324-acc6-4fc5-b250-33d22f563bcb" >
 		<http:listener doc:name="Listener" doc:id="23065b7e-860c-4659-a476-713db4717b1b" config-ref="HTTP_Listener_config" path="/test" allowedMethods="GET"/>
-		<set-payload value="Big Demo by Raja Maagati" doc:name="Set Payload" doc:id="1ecc9768-91c3-49b9-85be-46d3b6da3a95" />
+		<set-payload value="MuleSoft CICD Deployment from Anypoint studio " doc:name="Set Payload" doc:id="1ecc9768-91c3-49b9-85be-46d3b6da3a95" />
 	</flow>
 </mule>
